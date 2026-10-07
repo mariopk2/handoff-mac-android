@@ -1,0 +1,3 @@
+bg.mvsoft.clipbridge:drawable/ic_up = 0x7f010002
+bg.mvsoft.clipbridge:drawable/ic_down = 0x7f010001
+bg.mvsoft.clipbridge:drawable/ic_app = 0x7f010000

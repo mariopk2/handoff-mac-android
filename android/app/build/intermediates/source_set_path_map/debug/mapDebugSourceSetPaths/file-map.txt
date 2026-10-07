@@ -1,0 +1,7 @@
+bg.mvsoft.clipbridge.app-pngs-0 /Users/marioivanov/Downloads/projects/ClipBridge/android/app/build/generated/res/pngs/debug
+bg.mvsoft.clipbridge.app-resValues-1 /Users/marioivanov/Downloads/projects/ClipBridge/android/app/build/generated/res/resValues/debug
+bg.mvsoft.clipbridge.app-packageDebugResources-2 /Users/marioivanov/Downloads/projects/ClipBridge/android/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+bg.mvsoft.clipbridge.app-packageDebugResources-3 /Users/marioivanov/Downloads/projects/ClipBridge/android/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+bg.mvsoft.clipbridge.app-debug-4 /Users/marioivanov/Downloads/projects/ClipBridge/android/app/build/intermediates/merged_res/debug/mergeDebugResources
+bg.mvsoft.clipbridge.app-debug-5 /Users/marioivanov/Downloads/projects/ClipBridge/android/app/src/debug/res
+bg.mvsoft.clipbridge.app-main-6 /Users/marioivanov/Downloads/projects/ClipBridge/android/app/src/main/res

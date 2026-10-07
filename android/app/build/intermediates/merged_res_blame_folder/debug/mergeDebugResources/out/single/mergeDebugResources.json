@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "bg.mvsoft.clipbridge.app-debug-4:/drawable_ic_up.xml.flat",
+        "source": "bg.mvsoft.clipbridge.app-main-6:/drawable/ic_up.xml"
+    },
+    {
+        "merged": "bg.mvsoft.clipbridge.app-debug-4:/drawable_ic_down.xml.flat",
+        "source": "bg.mvsoft.clipbridge.app-main-6:/drawable/ic_down.xml"
+    },
+    {
+        "merged": "bg.mvsoft.clipbridge.app-debug-4:/drawable_ic_app.xml.flat",
+        "source": "bg.mvsoft.clipbridge.app-main-6:/drawable/ic_app.xml"
+    }
+]

@@ -1,0 +1,29 @@
+plugins {
+    id("com.android.application")
+}
+
+android {
+    namespace = "bg.mvsoft.clipbridge"
+    compileSdk = 35
+
+    defaultConfig {
+        applicationId = "bg.mvsoft.clipbridge"
+        minSdk = 29
+        targetSdk = 35
+        versionCode = 1
+        versionName = "1.0"
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+}
+
+// Няма външни зависимости — само Android framework.
