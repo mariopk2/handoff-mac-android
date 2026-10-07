@@ -1,36 +1,35 @@
-# ClipBridge — клипборд между Pixel и Mac
+# ClipBridge — clipboard sharing between Pixel and Mac
 
-Две малки приложения, които си говорят само в локалната Wi‑Fi мрежа (без облак, без акаунти).
+Two small apps that communicate only over the local Wi-Fi network (no cloud, no accounts).
 
-- **Телефон → Mac:** копираш текст, дърпаш панела надолу и натискаш плочката **„Към Mac“**. Текстът е в клипборда на Mac.
-- **Mac → телефон:** копираш на Mac и натискаш плочката **„От Mac“** на телефона.
-- Или маркираш текст и избираш **Сподели → ClipBridge**.
+- **Phone → Mac:** copy text, pull down the notification panel, and tap the **"To Mac"** tile. The text is now in the Mac's clipboard.
+- **Mac → Phone:** copy on the Mac and tap the **"From Mac"** tile on the phone.
+- Alternatively, select text and choose **Share → ClipBridge**.
 
 ## 1. Mac
 
 ```bash
-xcode-select --install        # само ако нямаш Command Line Tools
+xcode-select --install        # only if you don't have Command Line Tools installed
 cd mac
 ./build.sh
 mv ClipBridge.app /Applications/ && open /Applications/ClipBridge.app
 ```
 
-Горе в менюто се появява икона на клипборд. Там виждаш **кода за телефона** и можеш да включиш „Стартирай при вход“.
-Ако macOS попита дали да разреши входящи връзки или достъп до локалната мрежа, натисни **Allow**.
+A clipboard icon appears in the menu bar. There, you can see the **code for the phone** and enable "Launch at login."
+If macOS asks whether to allow incoming connections or access to the local network, click **Allow**.
 
 ## 2. Android (Pixel)
 
-1. Отвори папката `android` в **Android Studio** (File → Open).
-2. Включи USB debugging на Pixel-а, свържи го с кабел и натисни **Run ▶**.
-   Друг вариант: Build → Build APK(s), после пращаш APK-то на телефона с Quick Share.
-3. Отвори ClipBridge на телефона:
-   - въведи кода от менюто на Mac;
-   - натисни „Намери Mac автоматично“, после „Запази и тествай“;
-   - натисни двата бутона за добавяне на плочките.
+1. Open the `android` folder in **Android Studio** (File → Open).
+2. Enable USB debugging on your Pixel, connect it via cable, and press **Run ▶**. 
+Alternative: Build → Build APK(s), then send the APK to the phone using Quick Share.
+3. Open ClipBridge on the phone:
+- enter the code from the Mac menu; 
+- tap "Find Mac automatically," then "Save and test"; 
+- tap both buttons to add the tiles.
 
-## Бележки
+## Notes
 
-- Ако IP-то на Mac-а се смени, телефонът го намира сам (Bonjour).
-- Всяка заявка се проверява с кода. Ако го смениш от менюто на Mac, въведи новия и на телефона.
-- Връзката е HTTP в локалната мрежа, без криптиране. Не я ползвай в публични Wi‑Fi мрежи за пароли.
-- Ако Android Studio предложи да обнови Gradle/AGP, можеш спокойно да приемеш.
+- If the Mac's IP address changes, the phone finds it automatically (Bonjour). - Each request is verified using the code. If you change it in the Mac menu, enter the new code on your phone as well.
+- The connection over the local network uses HTTP and is unencrypted. Do not use it on public Wi-Fi networks when handling passwords.
+- If Android Studio suggests updating Gradle/AGP, you can safely accept the update.
